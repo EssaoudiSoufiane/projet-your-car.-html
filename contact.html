@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('photo2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.localisation_c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0;
+}
+.localisation{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    
+}
+.localisation iframe{
+    width: 100%;
+    border-radius: 6px;
+}
+.localisation_c_div .c_contacte{
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 5px;
+    ;
+}
+.localisation h2{
+    font-size: 36px;
+    text-align: center;
+
+}
+.localisation_c_div .c_contacte form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.c_contacte h2{
+    font-size: 36px;
+    text-align: center;
+}
+.c_contacte{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+.c_contacte form input , textarea{
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+    background: white;
+}
+.c_contacte  .btn{
+    width: 100%;
+    height: 45%;
+    background:rgb(14, 14, 131) ;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+</style>
+
+
+
+<body>
+    <section id="contacte">
+        <div class="localisation_c">
+            <div class="localisation">
+                <h2>Our Adress</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2019.9354156690972!2d-8.011662181437117!3d31.630759040946835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef9ce2003acb%3A0xbf12ed0e32f9fa0c!2sEcole%20Marocaine%20Des%20Sciences%20de%20l&#39;Ing%C3%A9nieur!5e0!3m2!1sfr!2sma!4v1716062463976!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="c_contacte">
+                <h2>Send a message</h2>
+                <form action="#">
+                    <input type="texte" placeholder="Name">
+                    <input type="email" placeholder="Adress email">
+                    <input type="text" placeholder="object">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>                 
+                    <button type="submit" class="btn">Send</button>
+                 </form>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
